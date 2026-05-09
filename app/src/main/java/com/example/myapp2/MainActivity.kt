@@ -328,20 +328,24 @@ fun MiPantallaSeis() {
         modifier = Modifier.fillMaxSize().padding(all = 10.dp)
     ) {
         Row(
+            modifier = Modifier.fillMaxWidth()
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.height(200.dp)
                     .padding(horizontal = 20.dp)
+                    .fillMaxWidth()
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.italcol),
                     contentDescription = "Juan Pérez",
                     modifier = Modifier.width(width = 150.dp).clip(RoundedCornerShape(50.dp))
                 )
-                Text(text = "Juan Pérez", fontWeight = FontWeight.Bold, fontSize = 30.sp)
-                Text(text = "Desarrollador Android apasionado por la tecnología y el diseño", textAlign = TextAlign.Center, fontSize = 15.sp)
+                Text(text = "Cristian Quiroga", fontWeight = FontWeight.Bold, fontSize = 30.sp)
+                Text(text = "Tenista amateur, desarrollador web por hobby",
+                    textAlign = TextAlign.Center,
+                    fontSize = 15.sp)
             }
         }
         Row(
@@ -407,7 +411,7 @@ fun MiPantallaSeis() {
                 ) {
                     Column() {
                         FilledTonalButton(onClick = {}) {
-                            Text("Ciclismo")
+                            Text("Tennis")
                         }
                     }
                     Column() {
@@ -417,7 +421,7 @@ fun MiPantallaSeis() {
                     }
                     Column() {
                         FilledTonalButton(onClick = {}) {
-                            Text("UI/UX")
+                            Text("Backend")
                         }
                     }
                 }
@@ -432,7 +436,7 @@ fun MiPantallaSeis() {
                     }
                     Column() {
                         FilledTonalButton(onClick = {}) {
-                            Text("Viajes")
+                            Text("Tecnología")
                         }
                     }
                     Column() {
@@ -468,10 +472,10 @@ fun MiPantallaSeis() {
                         verticalArrangement = Arrangement.SpaceAround
                     ) {
                         Row() {
-                            Text(text = "App de Ciclismo", fontWeight = FontWeight.Bold, fontSize = 15.sp)
+                            Text(text = "App de Manufactura", fontWeight = FontWeight.Bold, fontSize = 15.sp)
                         }
                         Row() {
-                            Text(text = "Aplicación para rastrear rutas de ciclismo con mapas y estadísticas.")
+                            Text(text = "Aplicación web para cargar la producción a S1ESA ERP por medio de webservices.")
                         }
                         Row(
                             modifier = Modifier.fillMaxWidth()
